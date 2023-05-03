@@ -2,9 +2,9 @@ const express = require('express');
 const {addAdmin} = require('../controllers/userControlers')
 
 
-const adminRouter = express.Router()
+const userRouter = express.Router()
 const jsonParser = express.json()
 
-adminRouter.post('/',jsonParser, addAdmin)
+userRouter.post('/',jsonParser, addAdmin)
 
-module.exports = adminRouter
+module.exports = userRouter

@@ -8,4 +8,6 @@ const adminShema = new Schema({
     password: String
 })
 
+
+
 module.exports = mongoose.model('Admin', adminShema)
