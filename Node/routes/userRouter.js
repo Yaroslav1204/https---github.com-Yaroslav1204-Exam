@@ -1,10 +1,10 @@
 const express = require('express');
-const {addUser} = require('../controllers/userControlers')
+const {addAdmin} = require('../controllers/userControlers')
 
 
-const userRouter = express.Router()
+const adminRouter = express.Router()
 const jsonParser = express.json()
 
-userRouter.post('/',jsonParser, addUser)
+adminRouter.post('/',jsonParser, addAdmin)
 
-module.exports = userRouter
+module.exports = adminRouter

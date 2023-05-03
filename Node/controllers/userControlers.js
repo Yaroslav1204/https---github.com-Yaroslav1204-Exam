@@ -10,7 +10,7 @@ const adminUser = {
 }
 
 
-const addUser = async (req, res) => {
+const addAdmin = async (req, res) => {
     if (req.body) {
         const user = req.body
 
@@ -35,5 +35,5 @@ const addUser = async (req, res) => {
 }
 
 module.exports = {
-    addUser
+    addAdmin
 }

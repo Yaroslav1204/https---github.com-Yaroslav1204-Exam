@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const userRouter = require('./routes/userRouter')
+const adminRouter = require('./routes/userRouter')
 const {SERVER_PORT, CONNECTION_STRING} = require('./config/configs')
 const cors = require('cors')
 
@@ -12,7 +12,7 @@ app.use(cors())
 
 
 
-app.use('/api/users', userRouter)
+app.use('/api/users', adminRouter)
 
 
 
